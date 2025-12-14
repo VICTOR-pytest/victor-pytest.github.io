@@ -2,67 +2,92 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Victor Ramos | Desenvolvedor Web</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-  <h1>Victor Ramos</h1>
-  <p>Desenvolvedor Web • Python & Ruby on Rails</p>
+  <div class="header-content">
+    <h1>Victor Ramos</h1>
+    <p>Desenvolvedor Web • Python & Ruby on Rails</p>
+  </div>
 </header>
 
+<nav class="navbar">
+  <ul>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
 <main>
-  <section>
-    <h2>Sobre mim</h2>
-    <p>
-      Desenvolvedor web focado em backend, com experiência em
-      Python (Django) e Ruby on Rails. Crio aplicações CRUD,
-      sistemas de login e projetos web funcionais.
-    </p>
+
+  <!-- Seção Sobre -->
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="sobre-content">
+      
+        Sou desenvolvedor web focado em backend, com experiência em Python (Django) e Ruby on Rails.
+        Crio aplicações CRUD, sistemas de login e projetos web funcionais.
+      </p>
+    </div>
+    <div class="skills">
+      <span>Python</span>
+      <span>Django</span>
+      <span>Ruby on Rails</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
   </section>
 
-  <section>
+  <!-- Seção Projetos -->
+  <section id="projetos">
     <h2>Projetos</h2>
+    <div class="project-container">
 
-    <div class="project">
-  <div class="project-images">
-    <img src="assets/img/carrshop.png" alt="Carr Shop - tela 1">
-    <img src="assets/img/carrshop-2.png" alt="Carr Shop - tela 2">
-    <img src="assets/img/carrshop-3.png" alt="Carr Shop - tela 3">
-  </div>
+      <div class="project">
+        
+        <img src="assets/img/carr_shop.png" alt="Carr Shop Clone">
+        <img src="assets/img/carr_shop.png2" alt="Carr Shop Clone">
+        <img src="assets/img/carr_shop.png3" alt="Carr Shop Clone">
+        <h3>Carr Shop Clone (Python)</h3>
+        <p>Clone de carrinho de compras com CRUD e lógica de e-commerce.</p>
+        <a href="https://github.com/VICTOR-pytest/carr_clone_shop" target="_blank">GitHub</a>
+      </div>
 
-  <h3>Carr Shop Clone (Python)</h3>
-  <p>
-    Sistema web de carrinho de compras com CRUD de veículos,
-    listagem em cards e lógica de e-commerce.
-  </p>
+      <div class="project">
+        <img src="assets/img/sistema_login.png" alt="Sistema de Login">
+        <h3>Sistema de Login (Python)</h3>
+        <p>Sistema de autenticação de usuários com validação e segurança.</p>
+        <a href="https://github.com/VICTOR-pytest/sislogin.git" target="_blank">GitHub</a>
+      </div>
 
-  <a href="https://github.com/VICTOR-pytest/carr_clone_shop.git" target="_blank">
-    GitHub
-  </a>
-</div>
+      <div class="project">
+        <img src="assets/img/job_clone_crud.png" alt="JobClone">
+        <h3>JobClone (Rails)</h3>
+        <p>CRUD de vagas desenvolvido em Ruby on Rails.</p>
+        <a href="https://github.com/VICTOR-pytest/job_crud_clone.git" target="_blank">GitHub</a>
+      </div>
 
-
-    <div class="project">
-      <img src="assets/img/sistema_login.png" alt="Sistema de Login">
-      <h3>Sistema de Login (Python)</h3>
-      <p>Sistema de autenticação de usuários com validação e segurança.</p>
-      <a href="https://github.com/VICTOR-pytest/sislogin.git" target="_blank">
-        GitHub
-      </a>
     </div>
-
-    <div class="project">
-      <img src="assets/img/job_clone_crud.png" alt="JobClone">
-      <h3>JobClone (Rails)</h3>
-      <p>CRUD de vagas desenvolvido em Ruby on Rails.</p>
-      <a href="https://github.com/VICTOR-pytest/job_crud_clone.git" target="_blank">
-        GitHub
-      </a>
-    </div>
-
   </section>
+
+  <!-- Seção Contato -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo através das redes abaixo:</p>
+    <div class="contato-links">
+      <a href="https://github.com/VICTOR-pytest" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/victor-ramos-de-lima-932b59222" target="_blank">LinkedIn</a>
+      <a href="mailto:victorramosbk69@gmail.com">Email</a>
+    </div>
+  </section>
+
 </main>
 
 <footer>
