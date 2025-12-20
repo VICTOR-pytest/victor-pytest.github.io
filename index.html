@@ -2,111 +2,51 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <title>Victor Ramos | Portfólio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victor Ramos | Portfolio</title>
-
-  <!-- Fonte -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
+  <header class="hero">
     <h1>Victor Ramos</h1>
-    <p>Backend Developer • Cybersecurity • Pentest</p>
-
-    <div class="header-actions">
-      <a class="btn" href="https://github.com/VICTOR-pytest" target="_blank">GitHub</a>
-      <a class="btn" href="#" target="_blank">LinkedIn</a>
-    </div>
+    <p>Backend • Cybersecurity • Pentest</p>
   </header>
 
-  <!-- SOBRE -->
-  <section>
-    <h2>Sobre</h2>
-    <div class="card fade-in">
-      <p>
-        Desenvolvedor focado em backend e segurança de aplicações web.
-        Experiência com autenticação, controle de acesso, APIs REST
-        e fundamentos de pentest baseados no OWASP Top 10.
-      </p>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card skill-card fade-in">
-        <h3>Backend</h3>
-        <p>Python, Django, Django REST Framework</p>
-      </div>
-
-      <div class="card skill-card fade-in">
-        <h3>Cybersecurity</h3>
-        <p>OWASP Top 10, Web Pentest, Kali Linux</p>
-      </div>
-
-      <div class="card skill-card fade-in">
-        <h3>Ferramentas</h3>
-        <p>Git, GitHub, VirtualBox, Linux</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section>
+  <section class="projects">
     <h2>Projetos</h2>
 
-    <div class="projects">
+    <div class="cards">
 
-      <!-- SISLOGIN -->
-      <div class="card project-card fade-in">
-        <h3>SisLogin</h3>
-        <p>
-          Sistema de autenticação com login, controle de acesso
-          e validação de usuários.
-        </p>
-        <a href="https://github.com/VICTOR-pytest/sislogin.git" target="_blank">
-          Ver no GitHub →
-        </a>
+      <div class="card">
+        <h3>Sistema de Login</h3>
+        <p>Autenticação, controle de acesso e boas práticas de segurança.</p>
+        <div class="buttons">
+          <a href="https://github.com/VICTOR-pytest/sislogin" target="_blank">Code</a>
+        </div>
       </div>
 
-      <!-- PROJETO -->
-      <div class="card project-card fade-in">
-        <h3>Projeto Backend</h3>
-        <p>
-          Aplicação backend focada em lógica de negócio,
-          estruturação de rotas e boas práticas.
-        </p>
-        <a href="https://github.com/VICTOR-pytest/projeto.git" target="_blank">
-          Ver no GitHub →
-        </a>
-      </div>
-
-      <!-- CARR SHOP -->
-      <div class="card project-card fade-in">
+      <div class="card">
         <h3>Car Shop Clone</h3>
-        <p>
-          Clone de loja virtual com estrutura de produtos,
-          layout responsivo e organização de frontend.
-        </p>
-        <a href="https://github.com/VICTOR-pytest/carr_clone_shop.git" target="_blank">
-          Ver no GitHub →
-        </a>
+        <p>E-commerce de carros com layout moderno e lógica de negócio.</p>
+        <div class="buttons">
+          <a href="https://github.com/VICTOR-pytest/carr_clone_shop" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Projeto Web</h3>
+        <p>Aplicação web com foco em backend e estrutura limpa.</p>
+        <div class="buttons">
+          <a href="https://github.com/VICTOR-pytest/projeto" target="_blank">Code</a>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    © 2025 • Victor Ramos
+    <p>© 2025 Victor Ramos</p>
   </footer>
 
 </body>
