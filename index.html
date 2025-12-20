@@ -1,98 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Victor Ramos | Desenvolvedor Web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor Ramos | Portfolio</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <div class="header-content">
+  <!-- HEADER -->
+  <header>
     <h1>Victor Ramos</h1>
-    <p>Desenvolvedor Web • Python & Ruby on Rails</p>
-  </div>
-</header>
+    <p>Backend Developer • Cybersecurity • Pentest</p>
 
-<nav class="navbar">
-  <ul>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</nav>
+    <div class="header-actions">
+      <a class="btn" href="https://github.com/VICTOR-pytest" target="_blank">GitHub</a>
+      <a class="btn" href="#" target="_blank">LinkedIn</a>
+    </div>
+  </header>
 
-<main>
-
-  <!-- Seção Sobre -->
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <div class="sobre-content">
-      
-        Sou desenvolvedor web focado em backend, com experiência em Python (Django) e Ruby on Rails.
-        Crio aplicações CRUD, sistemas de login e projetos web funcionais.
+  <!-- SOBRE -->
+  <section>
+    <h2>Sobre</h2>
+    <div class="card fade-in">
+      <p>
+        Desenvolvedor focado em backend e segurança de aplicações web.
+        Experiência com autenticação, controle de acesso, APIs REST
+        e fundamentos de pentest baseados no OWASP Top 10.
       </p>
     </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
     <div class="skills">
-      <span>Python</span>
-      <span>Django</span>
-      <span>Ruby on Rails</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
+      <div class="card skill-card fade-in">
+        <h3>Backend</h3>
+        <p>Python, Django, Django REST Framework</p>
+      </div>
+
+      <div class="card skill-card fade-in">
+        <h3>Cybersecurity</h3>
+        <p>OWASP Top 10, Web Pentest, Kali Linux</p>
+      </div>
+
+      <div class="card skill-card fade-in">
+        <h3>Ferramentas</h3>
+        <p>Git, GitHub, VirtualBox, Linux</p>
+      </div>
     </div>
   </section>
 
-  <!-- Seção Projetos -->
-  <section id="projetos">
+  <!-- PROJETOS -->
+  <section>
     <h2>Projetos</h2>
-    <div class="project-container">
 
-      <div class="project">
-        
-        <img src="assets/img/carr_shop.png" alt="Carr Shop Clone">
-        <img src="assets/img/carr_shop.png2" alt="Carr Shop Clone">
-        <img src="assets/img/carr_shop.png3" alt="Carr Shop Clone">
-        <h3>Carr Shop Clone (Python)</h3>
-        <p>Clone de carrinho de compras com CRUD e lógica de e-commerce.</p>
-        <a href="https://github.com/VICTOR-pytest/carr_clone_shop" target="_blank">GitHub</a>
+    <div class="projects">
+
+      <!-- SISLOGIN -->
+      <div class="card project-card fade-in">
+        <h3>SisLogin</h3>
+        <p>
+          Sistema de autenticação com login, controle de acesso
+          e validação de usuários.
+        </p>
+        <a href="https://github.com/VICTOR-pytest/sislogin.git" target="_blank">
+          Ver no GitHub →
+        </a>
       </div>
 
-      <div class="project">
-        <img src="assets/img/sistema_login.png" alt="Sistema de Login">
-        <h3>Sistema de Login (Python)</h3>
-        <p>Sistema de autenticação de usuários com validação e segurança.</p>
-        <a href="https://github.com/VICTOR-pytest/sislogin.git" target="_blank">GitHub</a>
+      <!-- PROJETO -->
+      <div class="card project-card fade-in">
+        <h3>Projeto Backend</h3>
+        <p>
+          Aplicação backend focada em lógica de negócio,
+          estruturação de rotas e boas práticas.
+        </p>
+        <a href="https://github.com/VICTOR-pytest/projeto.git" target="_blank">
+          Ver no GitHub →
+        </a>
       </div>
 
-      <div class="project">
-        <img src="assets/img/job_clone_crud.png" alt="JobClone">
-        <h3>JobClone (Rails)</h3>
-        <p>CRUD de vagas desenvolvido em Ruby on Rails.</p>
-        <a href="https://github.com/VICTOR-pytest/job_crud_clone.git" target="_blank">GitHub</a>
+      <!-- CARR SHOP -->
+      <div class="card project-card fade-in">
+        <h3>Car Shop Clone</h3>
+        <p>
+          Clone de loja virtual com estrutura de produtos,
+          layout responsivo e organização de frontend.
+        </p>
+        <a href="https://github.com/VICTOR-pytest/carr_clone_shop.git" target="_blank">
+          Ver no GitHub →
+        </a>
       </div>
 
     </div>
   </section>
 
-  <!-- Seção Contato -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato comigo através das redes abaixo:</p>
-    <div class="contato-links">
-      <a href="https://github.com/VICTOR-pytest" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/victor-ramos-de-lima-932b59222" target="_blank">LinkedIn</a>
-      <a href="mailto:victorramosbk69@gmail.com">Email</a>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <p>© 2025 - Victor Ramos</p>
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    © 2025 • Victor Ramos
+  </footer>
 
 </body>
 </html>
