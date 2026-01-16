@@ -2,65 +2,105 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Victor Ramos | Backend Júnior</title>
+  <title>Victor Ramos | Desenvolvedor Backend Júnior</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body { margin:0; font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; background:#0b0f1a; color:#e5e7eb; }
-    header { padding:60px 20px; text-align:center; border-bottom:1px solid #1f2933; }
-    header h1 { margin:0; font-size:2.4rem; }
-    header p { margin-top:8px; color:#9ca3af; }
-    section { max-width:900px; margin:60px auto; padding:0 20px; }
-    h2 { font-size:1.6rem; margin-bottom:20px; border-left:4px solid #38bdf8; padding-left:12px; }
-    .project { margin-bottom:32px; }
-    .project h3 { margin-bottom:6px; }
-    .project p { color:#cbd5e1; margin-bottom:8px; }
-    .project a { color:#38bdf8; text-decoration:none; font-weight:500; }
-    footer { text-align:center; padding:30px 10px; color:#6b7280; border-top:1px solid #1f2933; }
-  </style>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
+  <!-- HERO -->
+  <header class="hero">
     <h1>Victor Ramos</h1>
-    <p>Desenvolvedor Backend Júnior • Python • Django</p>
-    <p>
-      <a href="https://github.com/VICTOR-pytest" target="_blank">GitHub</a> ·
+    <p>Desenvolvedor Backend Júnior • Python • Django • APIs REST</p>
+
+    <div class="links">
+      <a href="https://github.com/victor-pytest" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/victor-ramos-de-lima-932b59222" target="_blank">LinkedIn</a>
-    </p>
+    </div>
   </header>
 
-  <section>
-    <h2>Sobre</h2>
+  <!-- SOBRE MIM -->
+  <section id="sobre" class="about">
+    <h2>Sobre mim</h2>
+
     <p>
-      Sou desenvolvedor backend júnior com foco em Python e Django.
-      Tenho experiência prática com APIs REST, autenticação, CRUD completo e deploy em produção.
-      Busco minha primeira oportunidade como backend para continuar evoluindo em projetos reais.
+      Sou Desenvolvedor Backend Júnior com foco em <strong>Python</strong> e
+      <strong>Django</strong>. Tenho experiência prática no desenvolvimento de
+      aplicações web, APIs REST e sistemas CRUD, incluindo autenticação,
+      regras de negócio e deploy em produção.
+    </p>
+
+    <p>
+      Já desenvolvi projetos completos como um sistema de vagas de emprego
+      e uma API REST para gestão de usuários e tarefas, aplicando boas
+      práticas de organização de código, versionamento e estruturação
+      de projetos.
+    </p>
+
+    <p>
+      Busco minha primeira oportunidade como desenvolvedor backend júnior,
+      onde eu possa evoluir tecnicamente, aprender com o time e gerar valor
+      com código limpo e bem estruturado.
     </p>
   </section>
 
-  <section>
+  <!-- PROJETOS -->
+  <section id="projetos" class="projects">
     <h2>Projetos</h2>
 
-    <div class="project">
-      <div class="project">
-      <h3>DevJobs – Plataforma de Vagas</h3>
-      <p>Aplicação web em Django com autenticação de usuários, CRUD completo e deploy em produção.</p>
-      <a href="https://devjobs-full-production.up.railway.app" target="_blank">Deploy em produção</a>
-    </div>
+    <div class="cards">
 
-    <div class="project">
-      <h3>API de Gestão de Tarefas</h3>
-      <p>API REST desenvolvida com Django REST Framework para gerenciamento de tarefas, com operações CRUD e organização de endpoints seguindo boas práticas.</p>
-      <a href="https://apigestaodetarefa-production.up.railway.app" target="_blank">Deploy em produção</a><br/>
-      <a href="https://github.com/VICTOR-pytest/apigestaodetarefa" target="_blank">Código no GitHub</a>
-    </div>
+      <!-- DEVJOBS -->
+      <div class="card">
+        <h3>DevJobs</h3>
+        <p>
+          Sistema web de vagas de emprego desenvolvido com Django,
+          incluindo autenticação, CRUD de vagas, regras de negócio
+          e deploy em produção.
+        </p>
+        <a href="https://web-production-26ddf.up.railway.app" target="_blank">
+          Ver aplicação
+        </a>
+      </div>
 
+      <!-- API GESTÃO DE TAREFAS -->
+      <div class="card">
+        <h3>API de Gestão de Usuários e Tarefas</h3>
+        <p>
+          API REST desenvolvida com Django REST Framework para cadastro
+          de usuários e gerenciamento de tarefas, com autenticação
+          e endpoints seguindo boas práticas REST.
+        </p>
+
+        <a href="https://apigestaodetarefa-production.up.railway.app" target="_blank">
+          Ver API em produção
+        </a>
+      </div>
+
+    </div>
   </section>
 
-  <footer>
-    <p>© 2026 Victor Ramos</p>
+  <!-- TECNOLOGIAS -->
+  <section id="techs" class="techs">
+    <h2>Tecnologias</h2>
+
+    <ul>
+      <li>Python</li>
+      <li>Django</li>
+      <li>Django REST Framework</li>
+      <li>APIs REST</li>
+      <li>Autenticação</li>
+      <li>HTML & CSS</li>
+      <li>Git & GitHub</li>
+      <li>Deploy (Railway)</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 • Victor Ramos</p>
   </footer>
 
 </body>
 </html>
-
