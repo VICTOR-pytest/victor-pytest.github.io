@@ -4,102 +4,203 @@
   <meta charset="UTF-8" />
   <title>Victor Ramos | Desenvolvedor Backend Júnior</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Victor Ramos - Desenvolvedor Backend Júnior especializado em Python e Django.">
+  
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
 
-  <link rel="stylesheet" href="style.css" />
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #0f172a);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 1.4rem;
+      font-weight: normal;
+      color: #38bdf8;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.1rem;
+      color: #cbd5f5;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 22px;
+      background-color: #38bdf8;
+      color: #020617;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #38bdf8;
+      padding-left: 15px;
+    }
+
+    .about p {
+      max-width: 800px;
+      font-size: 1.05rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #020617;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+    }
+
+    .card h4 {
+      margin-top: 0;
+      color: #38bdf8;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    .tech {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #020617;
+      color: #94a3b8;
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- HERO -->
-  <header class="hero">
+  <header>
     <h1>Victor Ramos</h1>
-    <p>Desenvolvedor Backend Júnior • Python • Django • APIs REST</p>
+    <h2>Desenvolvedor Backend Júnior | Python & Django</h2>
+    <p>
+      Desenvolvo aplicações web e APIs REST do zero, com foco em regras de negócio,
+      organização de código e deploy em produção.
+    </p>
 
-    <div class="links">
-      <a href="https://github.com/victor-pytest" target="_blank">GitHub</a>
-      <a href="www.linkedin.com/in/htvictor-ramos-backend" target="_blank">LinkedIn</a>
-    </div>
+    <a class="btn" href="https://www.linkedin.com/in/victor-ramos-de-lima-932b59222" target="_blank">LinkedIn</a>
+    <a class="btn" href="https://github.com/victor-pytest" target="_blank">GitHub</a>
   </header>
 
-  <!-- SOBRE MIM -->
-  <section id="sobre" class="about">
-    <h2>Sobre mim</h2>
-
+  <!-- SOBRE -->
+  <section class="about">
+    <h3>Sobre mim</h3>
     <p>
-      Sou Desenvolvedor Backend Júnior com foco em <strong>Python</strong> e
-      <strong>Django</strong>. Tenho experiência prática no desenvolvimento de
-      aplicações web, APIs REST e sistemas CRUD, incluindo autenticação,
-      regras de negócio e deploy em produção.
+      Sou Desenvolvedor Backend Júnior com foco em <strong>Python e Django</strong>.
+      Gosto de entender o problema antes de escrever código e busco sempre soluções simples,
+      organizadas e fáceis de manter.
     </p>
-
     <p>
-      Já desenvolvi projetos completos como um sistema de vagas de emprego
-      e uma API REST para gestão de usuários e tarefas, aplicando boas
-      práticas de organização de código, versionamento e estruturação
-      de projetos.
-    </p>
-
-    <p>
-      Busco minha primeira oportunidade como desenvolvedor backend júnior,
-      onde eu possa evoluir tecnicamente, aprender com o time e gerar valor
-      com código limpo e bem estruturado.
+      Tenho experiência prática no desenvolvimento de aplicações web e APIs REST completas,
+      incluindo autenticação, CRUD, modelagem de banco de dados e deploy em produção.
+      Atualmente busco minha primeira oportunidade profissional como backend.
     </p>
   </section>
 
   <!-- PROJETOS -->
-  <section id="projetos" class="projects">
-    <h2>Projetos</h2>
+  <section>
+    <h3>Projetos</h3>
 
-    <div class="cards">
+    <div class="projects">
 
-      <!-- DEVJOBS -->
+      <!-- DevJobs -->
       <div class="card">
-        <h3>DevJobs</h3>
+        <h4>DevJobs — Sistema de Vagas de Emprego</h4>
         <p>
-          Sistema web de vagas de emprego desenvolvido com Django,
-          incluindo autenticação, CRUD de vagas, regras de negócio
-          e deploy em produção.
+          Aplicação web desenvolvida para gerenciar vagas de emprego de forma simples.
+          O sistema permite cadastro e autenticação de usuários, criação, edição e exclusão
+          de vagas, além de controle de permissões.
         </p>
-        <a href="https://web-production-26ddf.up.railway.app" target="_blank">
-          Ver aplicação
-        </a>
+        <p>
+          Projeto desenvolvido do zero, com foco em regras de negócio,
+          modelagem de dados e deploy em produção.
+        </p>
+        <p class="tech">
+          Tecnologias: Python, Django, PostgreSQL, HTML, CSS
+        </p>
+        <div class="links">
+          <a href="#" target="_blank">Demo</a>
+          <a href="https://github.com/victor-pytest" target="_blank">GitHub</a>
+        </div>
       </div>
 
-      <!-- API GESTÃO DE TAREFAS -->
+      <!-- API Tarefas -->
       <div class="card">
-        <h3>API de Gestão de Usuários e Tarefas</h3>
+        <h4>API de Gestão de Tarefas</h4>
         <p>
-          API REST desenvolvida com Django REST Framework para cadastro
-          de usuários e gerenciamento de tarefas, com autenticação
-          e endpoints seguindo boas práticas REST.
+          API REST desenvolvida com Django REST Framework para gerenciamento de tarefas.
+          Possui autenticação, endpoints CRUD e validação de dados.
         </p>
-
-        <a href="https://apigestaodetarefa-production.up.railway.app" target="_blank">
-          Ver API em produção
-        </a>
+        <p>
+          Projeto focado em boas práticas de APIs REST,
+          organização de código e arquitetura backend.
+        </p>
+        <p class="tech">
+          Tecnologias: Python, Django REST Framework
+        </p>
+        <div class="links">
+          <a href="https://apigestaodetarefa-production.up.railway.app" target="_blank">API em Produção</a>
+          <a href="https://github.com/victor-pytest" target="_blank">GitHub</a>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- TECNOLOGIAS -->
-  <section id="techs" class="techs">
-    <h2>Tecnologias</h2>
-
-    <ul>
-      <li>Python</li>
-      <li>Django</li>
-      <li>Django REST Framework</li>
-      <li>APIs REST</li>
-      <li>Autenticação</li>
-      <li>HTML & CSS</li>
-      <li>Git & GitHub</li>
-      <li>Deploy (Railway)</li>
-    </ul>
-  </section>
-
   <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2026 • Victor Ramos</p>
+  <footer>
+    <p>
+      © 2026 — Victor Ramos  
+      <br>
+      Desenvolvedor Backend Júnior | Python & Django
+    </p>
   </footer>
 
 </body>
