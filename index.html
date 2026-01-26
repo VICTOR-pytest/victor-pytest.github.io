@@ -2,13 +2,15 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Victor Ramos | Backend Developer</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- HERO -->
   <header class="hero">
     <h1>Victor Ramos</h1>
     <h2>Desenvolvedor Backend Júnior</h2>
@@ -21,6 +23,7 @@
     </div>
   </header>
 
+  <!-- SOBRE -->
   <section class="about">
     <h3>Sobre mim</h3>
     <p>
@@ -30,6 +33,7 @@
     </p>
   </section>
 
+  <!-- SKILLS -->
   <section class="skills">
     <h3>Tecnologias</h3>
     <ul>
@@ -38,15 +42,18 @@
       <li>Django REST Framework</li>
       <li>PostgreSQL</li>
       <li>APIs REST</li>
+      <li>JWT / Autenticação</li>
       <li>Git & GitHub</li>
       <li>HTML & CSS</li>
       <li>Deploy (Railway)</li>
     </ul>
   </section>
 
+  <!-- PROJETOS -->
   <section class="projects">
     <h3>Projetos</h3>
 
+    <!-- DEVJOBS -->
     <div class="project">
       <h4>DevJobs — Plataforma de Vagas</h4>
       <p>
@@ -54,28 +61,31 @@
         com autenticação de usuários, CRUD completo e deploy em produção.
       </p>
       <span>Python • Django • PostgreSQL • Railway</span>
+
+      <div class="project-links">
+        <a href="https://devjobs-full-production.up.railway.app" target="_blank">Demo</a>
+        <a href="https://github.com/victor-pytest/devjobs" target="_blank">GitHub</a>
+      </div>
     </div>
 
+    <!-- API GESTÃO DE TAREFAS -->
     <div class="project">
-      <h4>API de Tarefas — Django REST</h4>
+      <h4>API de Gestão de Tarefas — Django REST</h4>
       <p>
-        API REST para gerenciamento de tarefas, com autenticação, serializers e operações CRUD,
-        seguindo boas práticas de backend.
+        API REST desenvolvida com Django REST Framework para gestão de usuários e tarefas,
+        com autenticação, serializers e operações CRUD completas.
       </p>
-      <span>Python • Django REST Framework • JWT</span>
-    </div>
+      <span>Python • Django REST Framework • JWT • PostgreSQL</span>
 
-    <div class="project">
-      <h4>JobBoard Lite</h4>
-      <p>
-        Projeto focado em fundamentos de backend, utilizando Django para criação de um sistema
-        de cadastro e listagem de vagas.
-      </p>
-      <span>Django • ORM • CRUD</span>
+      <div class="project-links">
+        <a href="https://apigestaodetarefa-production.up.railway.app" target="_blank">Demo</a>
+        <a href="https://github.com/victor-pytest/api-gestao-tarefas" target="_blank">GitHub</a>
+      </div>
     </div>
 
   </section>
 
+  <!-- FORMAÇÃO -->
   <section class="education">
     <h3>Formação</h3>
     <p>
@@ -84,6 +94,7 @@
     </p>
   </section>
 
+  <!-- CURSOS -->
   <section class="courses">
     <h3>Cursos</h3>
     <ul>
@@ -93,9 +104,11 @@
     </ul>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2026 • Victor Ramos • Backend Developer</p>
   </footer>
 
 </body>
 </html>
+
