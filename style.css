@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
 }
 
+/* HERO */
 .hero {
   background: linear-gradient(135deg, #5f2eea, #2a0845);
   text-align: center;
@@ -52,6 +53,7 @@ body {
   color: #5f2eea;
 }
 
+/* SECTIONS */
 section {
   max-width: 900px;
   margin: 60px auto;
@@ -64,11 +66,13 @@ section h3 {
   font-size: 1.8rem;
 }
 
+/* ABOUT */
 .about p {
   font-size: 1.05rem;
   color: #dcd6f7;
 }
 
+/* SKILLS & COURSES */
 .skills ul,
 .courses ul {
   display: grid;
@@ -86,7 +90,8 @@ section h3 {
   border: 1px solid #2f1a5c;
 }
 
-.projects .project {
+/* PROJECTS */
+.project {
   background-color: #140a28;
   padding: 25px;
   border-radius: 10px;
@@ -109,16 +114,38 @@ section h3 {
   color: #a78bfa;
 }
 
+.project-links {
+  margin-top: 15px;
+}
+
+.project-links a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #7c3aed;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: #a78bfa;
+  color: #000;
+}
+
+/* EDUCATION */
 .education p {
   background-color: #160b2d;
   padding: 20px;
   border-radius: 8px;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 30px;
   background-color: #0a0512;
   color: #888;
 }
-
